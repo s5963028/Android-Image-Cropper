@@ -168,9 +168,6 @@ public final class MainFragment extends Fragment
         } else if (item.getItemId() == R.id.main_action_flip_horizontally) {
             mCropImageView.flipImageHorizontally();
             return true;
-        } else if (item.getItemId() == R.id.main_action_flip_vertically) {
-            mCropImageView.flipImageVertically();
-            return true;
         }
         return super.onOptionsItemSelected(item);
     }

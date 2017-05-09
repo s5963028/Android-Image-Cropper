@@ -12,20 +12,12 @@
         android:id="@+id/crop_image_menu_rotate_right"
         android:icon="@drawable/crop_image_menu_rotate_right"
         android:title="@string/crop_image_menu_rotate_right"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
     <item
-        android:id="@+id/crop_image_menu_flip"
+        android:id="@+id/crop_image_menu_flip_horizontally"
         android:icon="@drawable/crop_image_menu_flip"
-        android:title="@string/crop_image_menu_flip"
-        app:showAsAction="ifRoom">
-        <menu>
-            <item
-                android:id="@+id/crop_image_menu_flip_horizontally"
-                android:title="@string/crop_image_menu_flip_horizontally"/>
-            <item
-                android:id="@+id/crop_image_menu_flip_vertically"
-                android:title="@string/crop_image_menu_flip_vertically"/>
-        </menu>
+        app:showAsAction="always"
+        android:title="@string/crop_image_menu_flip">
     </item>
     <item
         android:id="@+id/crop_image_menu_crop"
