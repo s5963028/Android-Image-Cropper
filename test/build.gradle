@@ -14,9 +14,13 @@ android {
         abortOnError false
     }
 }
+repositories {
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
 
 dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+    compile 'com.github.s5963028:android-image-cropper:3.0.0'
 
 }

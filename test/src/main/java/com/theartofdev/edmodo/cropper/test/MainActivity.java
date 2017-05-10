@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onSelectImageClick(View view) {
         CropImage.activity(null)
-                .setGuidelines(CropImageView.Guidelines.ON)
+                .setShowCropOverlay(true)
+                .setGuidelines(CropImageView.Guidelines.OFF)
                 .start(this);
     }
 

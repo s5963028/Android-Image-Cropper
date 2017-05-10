@@ -128,8 +128,8 @@ public class CropImageActivity extends AppCompatActivity implements CropImageVie
         }
 
         if (mOptions.activityMenuIconColor != 0) {
-            updateMenuItemIconColor(menu, R.id.crop_image_menu_rotate_left, mOptions.activityMenuIconColor);
-            updateMenuItemIconColor(menu, R.id.crop_image_menu_rotate_right, mOptions.activityMenuIconColor);
+           // updateMenuItemIconColor(menu, R.id.crop_image_menu_rotate_left, mOptions.activityMenuIconColor);
+           // updateMenuItemIconColor(menu, R.id.crop_image_menu_rotate_right, mOptions.activityMenuIconColor);
             //updateMenuItemIconColor(menu, R.id.crop_image_menu_flip, mOptions.activityMenuIconColor);
             if (cropIcon != null) {
                 updateMenuItemIconColor(menu, R.id.crop_image_menu_crop, mOptions.activityMenuIconColor);
@@ -145,14 +145,14 @@ public class CropImageActivity extends AppCompatActivity implements CropImageVie
             cropImage();
             return true;
         }
-        if (item.getItemId() == R.id.crop_image_menu_rotate_left) {
+       /* if (item.getItemId() == R.id.crop_image_menu_rotate_left) {
             rotateImage(-mOptions.rotationDegrees);
             return true;
         }
         if (item.getItemId() == R.id.crop_image_menu_rotate_right) {
             rotateImage(mOptions.rotationDegrees);
             return true;
-        }
+        }*/
         if (item.getItemId() == R.id.crop_image_menu_flip_horizontally) {
             mCropImageView.flipImageHorizontally();
             return true;

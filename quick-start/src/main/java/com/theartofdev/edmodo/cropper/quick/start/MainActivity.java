@@ -57,10 +57,9 @@ public class MainActivity extends AppCompatActivity {
      * Start crop image activity for the given image.
      */
     private void startCropImageActivity(Uri imageUri) {
-        CropImage.activity(imageUri)
-                .setGuidelines(CropImageView.Guidelines.ON)
-                .setFlipHorizontally(true)
-                .setMultiTouchEnabled(true)
+        CropImage.activity(null)
+                .setShowCropOverlay(true)
+                .setGuidelines(CropImageView.Guidelines.OFF)
                 .start(this);
     }
 }
